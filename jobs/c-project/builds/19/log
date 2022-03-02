@@ -1,0 +1,71 @@
+Started by user [8mha:////4NHffYrnNuGLc1IaqYc2odXZxdUxFSZlOY+F9jplbvhZAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building remotely on [8mha:////4BHP9psFMFOI91xw5gTiCEy4NfLQC2EF4Vv/tkhmpL2tAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYB/eT83ILSktQi/eKcxLJUIwCCp2lrxQAAAA==[0mslave2 in workspace /home/jenkins/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/jenkins/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shwethalohith/my-work.git # timeout=10
+Fetching upstream changes from https://github.com/shwethalohith/my-work.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.25.1'
+ > git fetch --tags --force --progress -- https://github.com/shwethalohith/my-work.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 727d436d2b2bc27686cb0dbc139d242d875385ac (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 727d436d2b2bc27686cb0dbc139d242d875385ac # timeout=10
+Commit message: "Update test"
+ > git rev-list --no-walk 727d436d2b2bc27686cb0dbc139d242d875385ac # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins2751210923437447691.sh
++ cd /home/jenkins/workspace/c-project
++ make
+gcc -c main.c
+main.c:1:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+    1 | main() {
+      | ^~~~
+main.c: In function ‘main’:
+main.c:2:9: warning: implicit declaration of function ‘biggest3’ [-Wimplicit-function-declaration]
+    2 |         biggest3();
+      |         ^~~~~~~~
+main.c:3:9: warning: implicit declaration of function ‘factorial’ [-Wimplicit-function-declaration]
+    3 |         factorial();
+      |         ^~~~~~~~~
+main.c:4:2: warning: implicit declaration of function ‘rever’ [-Wimplicit-function-declaration]
+    4 |  rever();
+      |  ^~~~~
+main.c:5:2: warning: implicit declaration of function ‘biggest2’ [-Wimplicit-function-declaration]
+    5 |  biggest2();
+      |  ^~~~~~~~
+main.c:6:2: warning: implicit declaration of function ‘fabbinoci’ [-Wimplicit-function-declaration]
+    6 |  fabbinoci();
+      |  ^~~~~~~~~
+main.c:7:2: warning: implicit declaration of function ‘palindrome’ [-Wimplicit-function-declaration]
+    7 |  palindrome();
+      |  ^~~~~~~~~~
+main.c:8:2: warning: implicit declaration of function ‘sort’ [-Wimplicit-function-declaration]
+    8 |  sort();
+      |  ^~~~
+main.c:9:2: warning: implicit declaration of function ‘sumnum’ [-Wimplicit-function-declaration]
+    9 |  sumnum()
+      |  ^~~~~~
+gcc -c big3.c
+gcc -c fact.c
+fact.c: In function ‘factorial’:
+fact.c:15:31: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+   15 |         printf("Factorial of %d = %llu, n, fact\n");
+      |                              ~^
+      |                               |
+      |                               int
+fact.c:15:38: warning: format ‘%llu’ expects a matching ‘long long unsigned int’ argument [-Wformat=]
+   15 |         printf("Factorial of %d = %llu, n, fact\n");
+      |                                   ~~~^
+      |                                      |
+      |                                      long long unsigned int
+gcc -c rev.c
+gcc -c big2.c
+gcc -c fabbi.c
+gcc -c pal.c
+gcc -c sor.c
+gcc -c sum2.c
+gcc -o ABC.exe main.o big3.o fact.o rev.o big2.o fabbi.o pal.o sor.o sum2.o
+Finished: SUCCESS

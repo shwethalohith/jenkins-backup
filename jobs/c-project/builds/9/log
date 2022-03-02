@@ -1,0 +1,23 @@
+Started by user [8mha:////4NHffYrnNuGLc1IaqYc2odXZxdUxFSZlOY+F9jplbvhZAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/c project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shwethalohith/my-work.git # timeout=10
+Fetching upstream changes from https://github.com/shwethalohith/my-work.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > git fetch --tags --force --progress -- https://github.com/shwethalohith/my-work.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 727d436d2b2bc27686cb0dbc139d242d875385ac (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 727d436d2b2bc27686cb0dbc139d242d875385ac # timeout=10
+Commit message: "Update test"
+ > git rev-list --no-walk 727d436d2b2bc27686cb0dbc139d242d875385ac # timeout=10
+[c project] $ /bin/sh -xe /tmp/jenkins8299576796990357090.sh
++ cd /var/lib/jenkins/workspace/c project
+/tmp/jenkins8299576796990357090.sh: line 2: cd: /var/lib/jenkins/workspace/c: No such file or directory
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

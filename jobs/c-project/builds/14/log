@@ -1,0 +1,44 @@
+Started by user [8mha:////4NHffYrnNuGLc1IaqYc2odXZxdUxFSZlOY+F9jplbvhZAAAAlR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzmEgZO/dLi1CL9xKRkAGDVhlq+AAAA[0mabc
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/c-project
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/c-project/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/shwethalohith/my-work.git # timeout=10
+Fetching upstream changes from https://github.com/shwethalohith/my-work.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.32.0'
+ > git fetch --tags --force --progress -- https://github.com/shwethalohith/my-work.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 727d436d2b2bc27686cb0dbc139d242d875385ac (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 727d436d2b2bc27686cb0dbc139d242d875385ac # timeout=10
+Commit message: "Update test"
+ > git rev-list --no-walk 727d436d2b2bc27686cb0dbc139d242d875385ac # timeout=10
+[c-project] $ /bin/sh -xe /tmp/jenkins6512077033043641789.sh
++ cd /var/lib/jenkins/workspace/c-project/
++ ls -lrt
+total 104
+-rw-r--r-- 1 jenkins jenkins    41 Feb 25 15:57 test
+-rw-r--r-- 1 jenkins jenkins   274 Feb 25 15:57 sum2.c
+-rw-r--r-- 1 jenkins jenkins   746 Feb 25 15:57 sor.c
+-rw-r--r-- 1 jenkins jenkins   283 Feb 25 15:57 rev.c
+-rw-r--r-- 1 jenkins jenkins   314 Feb 25 15:57 pal.c
+-rw-r--r-- 1 jenkins jenkins   405 Feb 25 15:57 makefile
+-rw-r--r-- 1 jenkins jenkins   135 Feb 25 15:57 main.c
+-rw-r--r-- 1 jenkins jenkins   448 Feb 25 15:57 fact.c
+-rw-r--r-- 1 jenkins jenkins   500 Feb 25 15:57 fabbi.c
+-rw-r--r-- 1 jenkins jenkins   345 Feb 25 15:57 big3.c
+-rw-r--r-- 1 jenkins jenkins   184 Feb 25 15:57 big2.c
+-rw-r--r-- 1 jenkins jenkins  1832 Feb 25 15:59 main.o
+-rw-r--r-- 1 jenkins jenkins  1936 Feb 25 15:59 big3.o
+-rw-r--r-- 1 jenkins jenkins  1920 Feb 25 15:59 fact.o
+-rw-r--r-- 1 jenkins jenkins  1824 Feb 25 15:59 rev.o
+-rw-r--r-- 1 jenkins jenkins  1712 Feb 25 15:59 big2.o
+-rw-r--r-- 1 jenkins jenkins  2160 Feb 25 15:59 fabbi.o
+-rw-r--r-- 1 jenkins jenkins  1912 Feb 25 15:59 pal.o
+-rw-r--r-- 1 jenkins jenkins  2184 Feb 25 15:59 sor.o
+-rw-r--r-- 1 jenkins jenkins  1768 Feb 25 15:59 sum2.o
+-rwxr-xr-x 1 jenkins jenkins 22240 Feb 25 17:29 ABC.exe
+Finished: SUCCESS
